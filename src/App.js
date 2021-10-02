@@ -44,12 +44,11 @@ function App() {
 
       <BrowserRouter >
         <Route path="/hooks/:slug" component={Hooks} />  {/* route with params */}
-        {/* You can also pass props with route 
-        <Route path="/service" render={(props) => <Service {...props} name={"Dhaval"} />} /> 
-        */}
+       
+
       </BrowserRouter>
 
-      {/* Redirect from and to */}
+     
       <BrowserRouter>
         <Switch>
           <Redirect exact from="/service" to="/dashboard" />
